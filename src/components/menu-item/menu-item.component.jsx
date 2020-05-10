@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 import './menu-itm.styles.scss'
 
-const MenuItem = ({ title, imageUrl , size , history , match , linkUrl }) => (
+const MenuItem = ({ title , imageUrl , size , history , match , linkUrl }) => (
     <div
         style={{
             backgroundImage: `url(${imageUrl})`
