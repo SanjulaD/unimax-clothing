@@ -4,14 +4,14 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const config = {
-    apiKey: "AIzaSyBjpH0lP7D2EpC1jQzQaWXGMV9OBBKsitA",
-    authDomain: "unimax-db-a7402.firebaseapp.com",
-    databaseURL: "https://unimax-db-a7402.firebaseio.com",
-    projectId: "unimax-db-a7402",
-    storageBucket: "unimax-db-a7402.appspot.com",
-    messagingSenderId: "457147893270",
-    appId: "1:457147893270:web:ecf39af2bd723456fc1737",
-    measurementId: "G-MQEVJ6289W"
+    apiKey: "AIzaSyBN4K87bs_NjkzDRtFfiGaGEQDV59tn1zM",
+    authDomain: "unimax-db-b0574.firebaseapp.com",
+    databaseURL: "https://unimax-db-b0574.firebaseio.com",
+    projectId: "unimax-db-b0574",
+    storageBucket: "unimax-db-b0574.appspot.com",
+    messagingSenderId: "985839410115",
+    appId: "1:985839410115:web:c627fe715462a7013cfb76",
+    measurementId: "G-RR8FPHJJTB"
 };
 
 firebase.initializeApp(config);
