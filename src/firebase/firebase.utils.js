@@ -4,15 +4,34 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const config = {
-    apiKey: "AIzaSyBN4K87bs_NjkzDRtFfiGaGEQDV59tn1zM",
-    authDomain: "unimax-db-b0574.firebaseapp.com",
-    databaseURL: "https://unimax-db-b0574.firebaseio.com",
-    projectId: "unimax-db-b0574",
-    storageBucket: "unimax-db-b0574.appspot.com",
-    messagingSenderId: "985839410115",
-    appId: "1:985839410115:web:c627fe715462a7013cfb76",
-    measurementId: "G-RR8FPHJJTB"
+    //cannot provide this
 };
+
+export const createUserProfileDocument = async ( userAuth , additionalData ) => {
+    if (!userAuth) return
+
+    const userRef = firestore.doc(`users/${userAuth.uid}`);
+
+    const snapShot = await userRef.get();
+
+    if(!snapShot.exists) {
+        const { displayName , email } = userAuth;
+        const createdAt = new Date();
+
+        try {
+            await userRef.set({
+                displayName,
+                email,
+                createdAt,
+                ...additionalData
+            })
+        }
+        catch(error) {
+            console.log('error creating user ',error.message);
+        }
+    }
+    return userRef;
+}
 
 firebase.initializeApp(config);
 
