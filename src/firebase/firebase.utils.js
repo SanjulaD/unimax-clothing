@@ -4,7 +4,7 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 const config = {
-    //cannot provide this
+    //cannot provide the key
 };
 
 export const createUserProfileDocument = async ( userAuth , additionalData ) => {
