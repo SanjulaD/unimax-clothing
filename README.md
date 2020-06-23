@@ -1,6 +1,6 @@
 <h1> UNIMAX CLOTHING </h1>
 
-E-Commerce site built with ReactJS
+E-Commerce site built with ReactJS - Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
