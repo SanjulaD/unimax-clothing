@@ -1,6 +1,6 @@
 <h1> UNIMAX CLOTHING </h1>
 
-E-Commerce site built with ReactJS - Redux
+E-Commerce site built with ReactJS - Redux - Stripe API
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
